@@ -14,16 +14,16 @@ public class CartModel {
     private String cartItemId;
     @OneToOne(cascade = CascadeType.ALL,mappedBy = "cart")
     private UserModel userId;
-    private String ProductName;
-    private int Quantity;
+    private String productName;
+    private int quantity;
     private String price;
     public CartModel() {
     }
     public CartModel(String cartItemId, UserModel userId, String productName, int quantity, String price) {
         this.cartItemId = cartItemId;
         this.userId = userId;
-        ProductName = productName;
-        Quantity = quantity;
+        this.productName = productName;
+        this.quantity = quantity;
         this.price = price;
     }
     public String getCartItemId() {
@@ -39,16 +39,16 @@ public class CartModel {
         this.userId = userId;
     }
     public String getProductName() {
-        return ProductName;
+        return this.productName;
     }
     public void setProductName(String productName) {
-        ProductName = productName;
+        this.productName = productName;
     }
     public int getQuantity() {
-        return Quantity;
+        return this.quantity;
     }
     public void setQuantity(int quantity) {
-        Quantity = quantity;
+        this.quantity = quantity;
     }
     public String getPrice() {
         return price;

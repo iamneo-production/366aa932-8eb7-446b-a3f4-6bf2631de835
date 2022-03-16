@@ -14,22 +14,22 @@ public class OrderModel {
     private String orderId;
     @ManyToOne(cascade = CascadeType.ALL)
     private UserModel userId;
-    private String ProductName;
+    private String productName;
     private int quantity;
     private String totalPrice;
-    private String Status;
-    private String Price;
+    private String status;
+    private String price;
     public OrderModel() {
     }
     public OrderModel(String orderId, UserModel userId, String productName, int quantity, String totalPrice, String status,
             String price) {
         this.orderId = orderId;
         this.userId = userId;
-        ProductName = productName;
+        this.productName = productName;
         this.quantity = quantity;
         this.totalPrice = totalPrice;
-        Status = status;
-        Price = price;
+        this.status = status;
+        this.price = price;
     }
     public String getOrderId() {
         return orderId;
@@ -44,10 +44,10 @@ public class OrderModel {
         this.userId = userId;
     }
     public String getProductName() {
-        return ProductName;
+        return this.productName;
     }
     public void setProductName(String productName) {
-        ProductName = productName;
+        this.productName = productName;
     }
     public int getQuantity() {
         return quantity;
@@ -62,15 +62,15 @@ public class OrderModel {
         this.totalPrice = totalPrice;
     }
     public String getStatus() {
-        return Status;
+        return status;
     }
     public void setStatus(String status) {
-        Status = status;
+        this.status = status;
     }
     public String getPrice() {
-        return Price;
+        return this.price;
     }
     public void setPrice(String price) {
-        Price = price;
+        this.price = price;
     }
 }
