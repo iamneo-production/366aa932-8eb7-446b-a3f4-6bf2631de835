@@ -1,13 +1,13 @@
 import React from 'react';
-import ReactDOM  from 'react';
+
 import './login.css';
 
 function App() {
   function toggleSignup(){
     document.getElementById("signinLink").style.backgroundColor = "#fff";
     document.getElementById("signinLink").style.color = "#222";
-    document.getElementById("signinLink").style.backgroundColor = "#57b846";
-    document.getElementById("signinLink").style.color = "#fff";
+    document.getElementById("signupLink").style.backgroundColor = "#57b846";
+    document.getElementById("signupLink").style.color = "#fff";
     document.getElementById("loginBox").style.display = "none";
     document.getElementById("signupBox").style.display = "block";
   }
@@ -15,8 +15,8 @@ function App() {
   function toggleLogin(){
     document.getElementById("signinLink").style.backgroundColor = "#57B846";
     document.getElementById("signinLink").style.color = "#fff";
-    document.getElementById("signinLink").style.backgroundColor = "#fff";
-    document.getElementById("signinLink").style.color = "#222";
+    document.getElementById("signupLink").style.backgroundColor = "#fff";
+    document.getElementById("signupLink").style.color = "#222";
     document.getElementById("signupBox").style.display = "none";
     document.getElementById("loginBox").style.display = "block";
   }
@@ -25,7 +25,7 @@ function App() {
       <div className="form-modal">
       <div className="form-toggle">
       <button id="signinLink" onClick={ toggleLogin }> log in </button>
-      <button id="signinLink" onClick={ togglesignup }> sign up</button>
+      <button id="signupLink" onClick={ toggleSignup }> sign up</button>
     
     </div>
     <div id="loginBox">
