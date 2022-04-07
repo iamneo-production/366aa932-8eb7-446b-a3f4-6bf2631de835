@@ -37,6 +37,7 @@ const EditForm = ({theProduct}) =>{
                     required
                 />
             </Form.Group>
+            <br/>
             <Form.Group>
                 <Form.Control
                     type="price"
@@ -48,6 +49,7 @@ const EditForm = ({theProduct}) =>{
                     required
                 />
             </Form.Group>
+            <br/>
             <Form.Group>
                 <Form.Control
                     as="textarea"
@@ -60,6 +62,7 @@ const EditForm = ({theProduct}) =>{
 
                 />
             </Form.Group>
+            <br/>
             <Form.Group>
                 <Form.Control
                     type="text"
@@ -72,6 +75,7 @@ const EditForm = ({theProduct}) =>{
 
                 />
             </Form.Group>
+            <br/>
             <Form.Group>
                 <Form.Control
                     type="text"
@@ -83,6 +87,7 @@ const EditForm = ({theProduct}) =>{
 
                 />
             </Form.Group>
+            <br/>
             <Button variant="success" type="submit" id='editDressButton' block>
                 Edit Product
             </Button>

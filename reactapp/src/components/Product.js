@@ -3,6 +3,7 @@ import {ProductContext} from '../contexts/ProductContext';
 import { Modal, Button, OverlayTrigger, Tooltip } from 'react-bootstrap';
 import EditForm from './EditForm';
 import "./table.css";
+import CloseIcon from '@mui/icons-material/Close';
 
 
 const Product = ({product}) => {
@@ -26,7 +27,6 @@ const Product = ({product}) => {
             {/* <td>{product.discription}</td> */}
             <td>{product.quantity}</td>
             <td>
-            <button onClick={handleShow}  className="btn text-warning btn-act" data-toggle="modal"><i className="delicon"></i></button>
                 <OverlayTrigger
                     overlay={
                         <Tooltip id={`tooltip-top`}>
@@ -48,7 +48,7 @@ const Product = ({product}) => {
             </td>
 
             <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
+        <Modal.Header CloseIcon><CloseIcon/> 
             <Modal.Title>
                 Edit Product
             </Modal.Title>

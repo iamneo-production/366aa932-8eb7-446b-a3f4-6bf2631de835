@@ -1,16 +1,14 @@
+import ProductList from './components/ProductList';
 import ProductContextProvider from './contexts/ProductContext';
-import ProductView from './productview';
 
 
-function App() {
+function App1() {
   return (
      <div className="container-xl">
        <div className="table-responsive">
          <div className="table-wrapper">
            <ProductContextProvider>
-              <ProductView >
-                <div className='row'></div>
-             </ProductView>  
+               <ProductList/> 
            </ProductContextProvider>
          </div>
        </div>
@@ -18,4 +16,4 @@ function App() {
   );
 }
 
-export default App;
+export default App1;

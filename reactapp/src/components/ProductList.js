@@ -5,7 +5,6 @@ import Product from './Product';
 import AddForm from './AddForm';
 import Pagination from './Pagination';
 import './table.css';
-import './index.css';
 
 const ProductList = () => {
 
@@ -51,7 +50,7 @@ const ProductList = () => {
                 <h2>Product List</h2>
             </div>
             <div className="col-sm-6">
-                <Button onClick={handleShow} className="btn btn-success" id='addDressButton' data-toggle="modal"><i className="delicon">&#xE147;</i> <span>Add New Product</span></Button>					
+                <Button onClick={handleShow} className="btn btn-success" id='addDressButton' data-toggle="modal"><i className="material-icons">&#xE147;</i> <span>Add New Product</span></Button>					
             </div>
         </div>
     </div>
